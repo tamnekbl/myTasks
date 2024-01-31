@@ -1,0 +1,11 @@
+{
+    
+    "code-runner.executorMap": {
+        
+       "csharp": "cd $dir && dotnet run",
+      
+   },
+
+    "dotnet.defaultSolution": "ConsoleApp1.sln"
+    
+}
