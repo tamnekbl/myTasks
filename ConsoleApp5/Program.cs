@@ -24,6 +24,6 @@ void Print(IEnumerable list)
     }
 }
 
-
+//rjvv
 
 Print (nums2);
