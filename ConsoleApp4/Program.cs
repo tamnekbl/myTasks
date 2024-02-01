@@ -18,8 +18,14 @@ abcd.GetInfo();
 
 class Rectangle
 {
+
     private double a;
     private double b;
+    public Rectangle()
+    {
+        a = 1;
+        b = 1;
+    }
     public void Set(double a_, double b_)
     {
         a = a_;
