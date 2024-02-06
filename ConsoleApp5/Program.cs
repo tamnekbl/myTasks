@@ -57,8 +57,3 @@ all_cards = Shuffle (all_cards, 5);
 Print (Batch(all_cards, 6).Take(6));
 
 
-all_cards = Shuffle (all_cards, 5);
-
-Print (Batch(all_cards, 6).Take(6));
-
-
