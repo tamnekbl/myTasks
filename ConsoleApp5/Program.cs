@@ -52,8 +52,20 @@ void Print(IEnumerable list)
     Console.WriteLine();
 }
 
+void PrintWithIterator(IEnumerable list)
+{
+    IEnumerator iterator = list.GetEnumerator();
+    while (iterator.MoveNext())
+    {
+        var item = (IEnumerable) iterator.Current;
+        if (item.GetType() == typeof(String)) Console.Write(item+"  ");
+        else PrintWithIterator (item);
+    }
+    Console.WriteLine();
+}
+
 all_cards = Shuffle (all_cards, 5);
 
-Print (Batch(all_cards, 6).Take(6));
+PrintWithIterator (Batch(all_cards, 6).Take(6));
 
 
