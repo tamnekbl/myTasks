@@ -1,11 +1,10 @@
 ﻿/*Задача 2. Реализуйте стек*/
 
+using MyContainer.MyStack;
+using MyContainer;
 
-using System.Collections;
-using System.Runtime.InteropServices;
-using System.Runtime.Intrinsics.X86;
 
-Stack<char> chars = new Stack<char>();
+MyStack<char> chars = new MyStack<char>();
 string? s;
 s = Console.ReadLine();
 if (s!= null)
@@ -14,7 +13,7 @@ if (s!= null)
 Print<char> (chars);
 
 
-void Print<T>(Stack<T> stack)
+void Print<T>(MyStack<T> stack)
 {
     IEnumerator iterator = stack.GetIterator();
     Console.Write("Содержимое стэка: ");
@@ -25,6 +24,9 @@ void Print<T>(Stack<T> stack)
     }
 }
 
+namespace MyContainer
+{
+    
 interface IEnumerator
 {
     bool MoveNext();
@@ -37,11 +39,13 @@ interface IEnumerable
     IEnumerator GetIterator();
 }
 
+namespace MyStack
+{
 class Iterator<T> : IEnumerator
 {
     private StackItem<T>? pCurItem;
-    private Stack<T> list;
-    public Iterator(Stack<T> _list) => list = _list;
+    private MyStack<T> list;
+    public Iterator(MyStack<T> _list) => list = _list;
     public object? Current() => pCurItem == null? null:pCurItem.data;
 
     public bool MoveNext()
@@ -72,11 +76,11 @@ record StackItem <T>
 
 }
 
-class Stack<T> : IEnumerator, IEnumerable
+class MyStack<T> : IEnumerator, IEnumerable
 {
     public StackItem<T>? StackPointer;
     private StackItem<T>? pCurItem;
-    public Stack()
+    public MyStack()
     {
         StackPointer = null;
     }
@@ -124,4 +128,5 @@ class Stack<T> : IEnumerator, IEnumerable
 
     public IEnumerator GetIterator() => new Iterator<T>(this);
 }
-
+}
+}
