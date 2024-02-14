@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\myTasks\\ConsoleApp4\\ConsoleApp4.csproj",
-      "projectName": "ConsoleApp4",
-      "projectPath": "C:\\myTasks\\ConsoleApp4\\ConsoleApp4.csproj",
+      "projectUniqueName": "C:\\myTasks\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectName": "ConsoleApp6",
+      "projectPath": "C:\\myTasks\\ConsoleApp6\\ConsoleApp6.csproj",
       "packagesPath": "C:\\Users\\Tamerlan\\.nuget\\packages\\",
-      "outputPath": "C:\\myTasks\\ConsoleApp4\\obj\\",
+      "outputPath": "C:\\myTasks\\ConsoleApp6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tamerlan\\AppData\\Roaming\\NuGet\\NuGet.Config"

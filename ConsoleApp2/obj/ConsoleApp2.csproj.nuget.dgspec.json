@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj": {}
+    "C:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj": {}
   },
   "projects": {
-    "E:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj": {
+    "C:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj",
+        "projectUniqueName": "C:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj",
         "projectName": "ConsoleApp2",
-        "projectPath": "E:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj",
+        "projectPath": "C:\\myTasks\\ConsoleApp2\\ConsoleApp2.csproj",
         "packagesPath": "C:\\Users\\Tamerlan\\.nuget\\packages\\",
-        "outputPath": "E:\\myTasks\\ConsoleApp2\\obj\\",
+        "outputPath": "C:\\myTasks\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tamerlan\\AppData\\Roaming\\NuGet\\NuGet.Config"
