@@ -11,7 +11,9 @@ myThread.Start(parametr2);
 Print(parametr1);
  
 
+while (myThread.IsAlive);
 Console.WriteLine("Программа завершилась.");
+
 
 void Print(object? obj)
 {
@@ -26,6 +28,7 @@ void Print(object? obj)
     }
     
 }
+
 public struct Param
 {
     public string ThreadName;
