@@ -1,6 +1,7 @@
 ﻿using MyContainer;
 using MyContainer.MyStack;
 
+
 MyStack<int> stack = new MyStack<int>();
 
 Random rand = new Random();

@@ -1,0 +1,15 @@
+D:\myTasks\ConsoleApp10\bin\Debug\net8.0\ConsoleApp10.exe
+D:\myTasks\ConsoleApp10\bin\Debug\net8.0\ConsoleApp10.deps.json
+D:\myTasks\ConsoleApp10\bin\Debug\net8.0\ConsoleApp10.runtimeconfig.json
+D:\myTasks\ConsoleApp10\bin\Debug\net8.0\ConsoleApp10.dll
+D:\myTasks\ConsoleApp10\bin\Debug\net8.0\ConsoleApp10.pdb
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.GeneratedMSBuildEditorConfig.editorconfig
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.AssemblyInfoInputs.cache
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.AssemblyInfo.cs
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.csproj.CoreCompileInputs.cache
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.sourcelink.json
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.dll
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\refint\ConsoleApp10.dll
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.pdb
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ConsoleApp10.genruntimeconfig.cache
+D:\myTasks\ConsoleApp10\obj\Debug\net8.0\ref\ConsoleApp10.dll
