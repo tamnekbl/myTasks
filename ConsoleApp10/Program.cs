@@ -5,16 +5,16 @@ ManualResetEvent manualResetEvent = new ManualResetEvent(false);
 
 Task Task1 = Task.Run(()=>
 {
-    manualResetEvent.Set();
     System.Console.WriteLine("Hello");
+    manualResetEvent.Set();
 });
 
 Task Task2 = Task.Run(()=>
 {
-    
-    System.Console.WriteLine("World");
     manualResetEvent.WaitOne();
+    System.Console.WriteLine("World");
+    
 });
 
 
-Task.WaitAll();
+Task.WaitAll(Task1, Task2);
