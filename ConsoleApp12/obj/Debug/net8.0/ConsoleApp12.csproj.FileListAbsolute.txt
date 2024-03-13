@@ -1,0 +1,15 @@
+C:\myTasks\ConsoleApp12\bin\Debug\net8.0\ConsoleApp12.exe
+C:\myTasks\ConsoleApp12\bin\Debug\net8.0\ConsoleApp12.deps.json
+C:\myTasks\ConsoleApp12\bin\Debug\net8.0\ConsoleApp12.runtimeconfig.json
+C:\myTasks\ConsoleApp12\bin\Debug\net8.0\ConsoleApp12.dll
+C:\myTasks\ConsoleApp12\bin\Debug\net8.0\ConsoleApp12.pdb
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.GeneratedMSBuildEditorConfig.editorconfig
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.AssemblyInfoInputs.cache
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.AssemblyInfo.cs
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.csproj.CoreCompileInputs.cache
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.sourcelink.json
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.dll
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\refint\ConsoleApp12.dll
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.pdb
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ConsoleApp12.genruntimeconfig.cache
+C:\myTasks\ConsoleApp12\obj\Debug\net8.0\ref\ConsoleApp12.dll
