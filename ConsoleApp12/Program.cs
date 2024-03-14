@@ -1,5 +1,4 @@
 ﻿
-
 using System.Runtime.InteropServices;
 object locker = new();
 int [] array = {5, 4, 3, 2, 1}; 
