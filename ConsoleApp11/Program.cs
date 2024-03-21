@@ -9,7 +9,8 @@ Task[] tasks = new Task[100];
 
 for (int i = 0; i<100; i++)
 {
-    tasks[i] = Task.Run(() => Update(account1, account2));
+     if (i%2 == 1)  tasks[i] = Task.Run(() => Update(account1, account2));
+     else tasks[i] = Task.Run(() => Update(account2, account1));
 }
 
 
@@ -18,25 +19,24 @@ Task all_tasks = Task.WhenAll(tasks);
 int n = 0;
 while(!all_tasks.IsCompleted)
 {
-    int total_balance = account1.GetBalance() + account2.GetBalance();
-    System.Console.WriteLine();
+    int total_balance = account1.GetBalance() + account2.GetBalance(); //поместить в функцию и вызвать в во 2 эджасте
+    //System.Console.WriteLine();
     if (total_balance != 2000)
     {
         System.Console.WriteLine($"Total balance is wrong: {total_balance}");
         n++;
     }
+    
 }
 System.Console.WriteLine($"Number of mistakes: {n}");
+System.Console.WriteLine(account1.GetBalance() + account2.GetBalance()); 
 
 
-
-System.Console.WriteLine(account1.GetBalance()); 
-System.Console.WriteLine(account2.GetBalance()); 
 
 void Update (Account acc1, Account acc2)
 {
     foreach (int i in adjusts)
-        {
+    {
         acc1.Adjust(acc2, i);
     }
 }
