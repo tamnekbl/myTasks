@@ -19,17 +19,15 @@ Task all_tasks = Task.WhenAll(tasks);
 int n = 0;
 while(!all_tasks.IsCompleted)
 {
-    int total_balance = account1.GetBalance() + account2.GetBalance(); //поместить в функцию и вызвать в во 2 эджасте
-    //System.Console.WriteLine();
-    if (total_balance != 2000)
+    if (Account.total_balance != 2000)
     {
-        System.Console.WriteLine($"Total balance is wrong: {total_balance}");
+        System.Console.WriteLine($"Total balance is wrong: {Account.total_balance}");
         n++;
     }
     
 }
 System.Console.WriteLine($"Number of mistakes: {n}");
-System.Console.WriteLine(account1.GetBalance() + account2.GetBalance()); 
+System.Console.WriteLine(Account.total_balance); 
 
 
 
@@ -45,11 +43,18 @@ void Update (Account acc1, Account acc2)
 class Account
 {
     static object locker = new object();
-
+    public static int total_balance;    
     private int balance;
 
     public int GetBalance() => balance;
-    public Account(int _balance) => balance = _balance;
+    public Account(int _balance)
+    {
+        balance = _balance;
+        total_balance += balance;   //в конструкторе сразу прибавляем к статическому полю баланс, т.к. при первом вызове в основной программе total_balance = 0
+    }
+
+    int TotalBalance(Account source) => GetBalance() + source.GetBalance(); 
+
     public void Adjust(int amount)
     {
         lock(locker)
@@ -63,8 +68,8 @@ class Account
         {
             balance += amount;
             source.Adjust(-amount);
+            total_balance = TotalBalance(source);
         }
     }
 }
 
-//проблема https://metanit.com/sharp/tutorial/11.4.php
