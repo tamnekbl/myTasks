@@ -1,6 +1,7 @@
 ﻿using System.Xml.XPath;
+using System.Diagnostics;
 object locker = new(); 
-string dirName = "C://Users//Tamerlan//Desktop//dummy";
+string dirName = @"C:\Logs";
 
 int count = 0;
 
@@ -32,25 +33,25 @@ void LinesCounter (object? obj)
         
         while ((line = reader.ReadLine()) != null)
         {
-        lock (locker)
-        {
-        count++; 
-        }
+            Interlocked.Increment(ref count);
             
         }
         reader.Close();
     }
 }
 
-
+Stopwatch st = new Stopwatch();
+st.Start();
 
 var files = GetAllFiles(dirName);
 foreach (var file in files)
 {
-    System.Console.WriteLine(file);
+    //System.Console.WriteLine(file);
     tasks.Add(Task.Run(()=>LinesCounter(file)));
 }
 
+        
 Task.WaitAll(tasks.ToArray());
-
-System.Console.WriteLine(count);
+st.Stop();
+Console.WriteLine("Время выполнения: {0}", st.Elapsed.TotalSeconds);
+Console.WriteLine(count);
